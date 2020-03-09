@@ -1,0 +1,35 @@
+package oops_lms;
+import java.util.Scanner;
+
+public class Swap {
+
+   public static void main(String[] args) {
+       
+       //create a scanner
+       Scanner s = new Scanner(System.in);
+       
+       System.out.println("Input two numbers");
+
+       //get the int values from the console
+       int a = s.nextInt();
+       int b = s.nextInt();
+       
+       
+       //swap numbers without temp variable
+       
+       //1. add a and b, assign it to a
+       a = a + b;
+       
+       //2. now subtract b from a, that will give us value of a
+       b = a - b;
+       
+       //3. Subtract updated b (which now contain value of a) from a
+       a = a - b;
+       
+       System.out.println("Values after number swap");
+       System.out.println("a: " + a);
+       System.out.println("b: " + b);
+     
+               
+   }
+}
